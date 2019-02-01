@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validation Form</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <form action="" method="POST" class="form" >
+    <div class="wrapper">
+      <div class="form__title">Sign Up</div>
+      <fieldset>
+        <legend class="form__legend">Sign Up For Free</legend>
+          <label for="FirsName" >First Name*</label>
+          <input id="FirstName" data-validation="name" type="text" name="FirstName">
+          <label for="LastName">Last Name*</label>
+          <input id="LastName" data-validation="name"  type="text" name="LastName">
+          <label for="Birthday">Birthday Date*</label>
+          <input name="Birthday" data-validation="birthday"  id="Birthday" type="date" name="Birthday">
+          <div name='Gender' class="gender">   
+           <label for="male">Male</label>
+          <input type="radio" id="male" name="Gender">
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="Gender"></div>
+          <label  for="Country">Country*</label>
+          <select data-validation="country" id="Country">
+            <option selected disabled>Choose your country</option>
+            <option value="Ukr">Ukraine</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Germ">Germany</option>
+          </select>
+          <label for="email" >Email*</label>
+          <input data-validation="email" type="email" name="email" id="email">
+          <label for="password">Password*</label>
+          <input data-validation="password" type="password" name="password" id="password">
+          <label for="address">Address*</label>
+          <input data-validation="name" type="text" id="address" name="address">
+          <label for="notes">Notes</label>
+          <textarea name='notes' id="notes"></textarea>
+          <input class="form__button" value="GET STARTED" type="submit">
+      </fieldset>
+    </div>
+  </form>
+</body>
+</html>
